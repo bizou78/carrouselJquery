@@ -1,0 +1,73 @@
+
+#carrousel{
+    border: solid 5px black;
+    width: 1000px;
+    height: 667px;
+    margin-top: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    /*margin: 0 auto;*/
+    position: relative;
+    overflow: hidden;
+}
+.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1000px;
+    height: 667px;
+}
+.navigation{
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+}
+.navigation span{
+    background: #000;
+    color: #FFF;
+    padding: 4px 6px;
+    margin: 2px;
+}
+.navigation span:hover, .navigation span.active{
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+}
+.img-carrousel{
+    max-width: 100%;
+    height: auto;
+}
+.fa{
+    font-size: 2.5em;
+}
+.prev{
+    position: absolute;
+    z-index: 1000;
+    margin-top: 30%;
+    margin-left: 20px;
+}
+
+.next{
+    position: absolute;
+    z-index: 1000;
+    margin-top: 30%;
+    margin-left: 960px;
+}
+
+@media screen and (max-width:780px){
+    header{
+        height: 50px;
+    }
+    h1{
+        font-size: 28px;
+        margin: 20px 0px 0px 0px;
+    }
+    nav li a{
+        font-size: 12px;
+        padding: 10px;
+    }
+    nav li:hover a{
+        padding: 5px 10px 10px 10px;
+    }
+}
